@@ -6,18 +6,17 @@ step2:add a for loop on the array
 step3:return final array with oldest person in a group
 */
 
-oldestPerson = function (people) {
-    let max=people;
-    for (i = 0; i < max.length; i++) {
-
-        if (people[i] > max.length) {
-            max= people[i];
+oldestPerson = function (arr) {
+   let older = [];
+    for (i = 0; i < arr.length; i++) {
+  if (arr[i] > older) {
+        older=arr[i];
         }
     }
-    return max;
+    return older;
 }
-let people = [{ name: 'linyi', age: 19}, { name: 'teayung', age: 40 }, { name: 'kim', age: 21 }]
-console.log(oldestPerson(people));
+let arr = [{ name: 'cinni', age: 19}, { name: 'chitti', age: 40 }, { name: 'sameera', age: 21 }]
+console.log(oldestPerson(arr));
 
 
 

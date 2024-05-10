@@ -8,8 +8,8 @@ step3:return final string without special characters and white space
 
 removeSplChar = function (str) {
     let output = "";
-    for (i = 0; i < str1.length; i++) {
-        if ((str.charCodeAt(i) >= 33 && str.charCodeAt(i) <= 47) || (str.charCodeAt(i) >= 58 && str.charCodeAt(i) <= 64) || (str.charCodeAt(i) >= 91 && str1.charCodeAt(i) <= 96) || (str1.charCodeAt(i) >= 123 && str1.charCodeAt(i) <= 126) || (str1.charCodeAt(i) == 32)) {
+    for (i = 0; i < str.length; i++) {
+        if ((str.charCodeAt(i) >= 33 && str.charCodeAt(i) <= 47) || (str.charCodeAt(i) >= 58 && str.charCodeAt(i) <= 64) || (str.charCodeAt(i) >= 91 && str.charCodeAt(i) <= 96) || (str.charCodeAt(i) >= 123 && str.charCodeAt(i) <= 126) || (str.charCodeAt(i) == 32)) {
         }
         else {
             output = output + str[i];
